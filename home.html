@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function displayME(){
+    let textValue = document.getElementById('text').value;
+    let textValue1 = document.getElementById('sub1').value;
+    let textValue2 = document.getElementById('sub2').value;
+    let textValue3 = document.getElementById('sub3').value;
+    let textValue4 = document.getElementById('sub4').value;
+    let textValue5 = document.getElementById('sub5').value;
+    let total = Number(textValue1) + Number(textValue2) + Number(textValue3) + Number(textValue4) + Number(textValue5);
+    Total = total / 5;
+    alert("Name: " + textValue + "\n" + "IP1: " + textValue1 + "\n" + "IM1: " + textValue2 + "\n" + "OOP: " + textValue3 + "\n" + "EDP: " + textValue4 + "\n" + "HC2: " + textValue5 + "\n" + "Average: " + Total);
+}
+</script>
+<body>
+    <p>Name: <input type="string" name="fullname" id="text"></p>
+    <p>Grade</p>
+    <p>IP1:</p><input type="number1" id="sub1">
+    <p>IM1:</p><input type="number2" id="sub2">
+    <p>OOP:</p><input type="number3" id="sub3">
+    <p>EDP:</p><input type="number4" id="sub4">
+    <p>HCI2:</p><input type="number5" id="sub5">
+    <br>
+    <button onclick="displayME()">Compute</button>
+</body>
+</html>
